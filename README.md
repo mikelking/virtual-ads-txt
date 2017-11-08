@@ -14,6 +14,7 @@ By default, the Virtual Ads.txt plugin identifies the ad service partners author
 3. Once you have the plugin installed and activated, you'll see a new Ads.txt menu link under the Settings menu. Click that menu link to see the plugin settings page. From there you can edit the contents of your ads.txt file.
 
 ### Goals
+- [ ] Add composer manifest to autoinstall [bacon](https://github.com/mikelking/bacon/)
 - [x] setup AdOps role with custom capabilities
 - [x] add simple content editing
 - [x] support WordPress revisions system
