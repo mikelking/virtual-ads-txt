@@ -2,7 +2,8 @@
 
 /**
  * Class HTTP_Header_Controller
- * @see https://developer.wordpress.org/Plugin_API/Action_Reference/send_headers
+ *
+.org/Plugin_API/Action_Reference/send_headers
  * @see https://developer.wordpress.org/reference/functions/feed_content_type/
  * @see http://php.net/manual/en/function.header.php
  */

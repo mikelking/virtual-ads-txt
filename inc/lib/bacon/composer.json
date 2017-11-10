@@ -1,0 +1,24 @@
+{
+    "name": "mikelking/bacon",
+    "description": "WordPress mu plugin framework.",
+    "keywords": ["mu-plugin", "framework"],
+    "type": "wordpress-muplugin",
+    "homepage": "http://jafdip.com/",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Olivent, llc.",
+            "email": "info@olivent.com",
+            "homepage": "https://github.com/mikelking/dummy"
+        },
+        {
+            "name": "Mikel King",
+            "email": "mikel.king@olivent.com",
+            "homepage": "https://github.com/mikelking"
+    }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "composer/installers": "v1.2.0"
+    }
+}

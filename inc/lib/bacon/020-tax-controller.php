@@ -57,7 +57,7 @@ class Custom_Taxonomy_Controller {
 	const ADD_TO_ADMIN_COLS   = false; // label => show_admin_column
 	const ADD_TO_REST_API     = true;  // label => show_in_rest
 	const REST_BASE           = null;
-	const REST_CONTROLLER     = 'WP_REST_Terms_Controller';
+	const REST_CONTROLLER     = 'WP_REST_Posts_Controller';
 	const SHOW_IN_TAG_CLOUD   = false; // label => show_tagcloud
 	const ADD_TO_QUICK_EDIT   = false; // label => show_in_quick_edit
 	const META_BOX_CALL_BACK  = null;  // label => meta_box_cb

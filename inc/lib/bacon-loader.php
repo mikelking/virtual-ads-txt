@@ -5,7 +5,7 @@
 
 $self = basename( __FILE__, '.php' );
 
-$iterator = new DirectoryIterator( __DIR__ );
+$iterator = new DirectoryIterator( __DIR__ . '/bacon/ );
 while( $iterator->valid() ) {
 	$file = $iterator->current();
 	if ( ! $iterator->isDot() && $iterator->key() != 16 ) {
