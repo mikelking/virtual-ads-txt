@@ -198,14 +198,12 @@ class Virtual_Ads_Txt_Controller extends Base_Plugin {
 	 */
 	public function set_default_options() {
 		$this->options = array(
-			self::OPT_NAME => "google.com, 21861615, RESELLER, #banner\n"
-				. "google.com, pub-1629612759641520, DIRECT, f08c47fec0942fa0\n"
-				. "google.com, pub-1629612759641520, RESELLER, f08c47fec0942fa0\n"
-				. "google.com, pub-2911924646228087, RESELLER, #banner\n"
-				. "google.com, pub-4907621806957188, DIRECT, f08c47fec0942fa0\n"
-				. "google.com, pub-4907621806957188, RESELLER, f08c47fec0942fa0\n"
-				. "google.com, pub-7439041255533808, RESELLER, #banner\n"
-				. "google.com, pub-9557089510405422, RESELLER, f08c47fec0942fa0\n",
+			self::OPT_NAME => "# sample source: https://support.google.com/dfp_premium/answer/7441288?hl=en\n"
+				. "google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0\n"
+				. "google.com, pub-0000000000000000, RESELLER, f08c47fec0942fa0\n"
+				. "greenadexchange.com, 12345, DIRECT, AEC242\n"
+				. "blueadexchange.com, 4536, DIRECT\n"
+				. "silverssp.com, 9675, RESELLER\n",
 			'remove_settings' => false,
 		);
 		update_option( self::OPT_NAME, $this->options );
