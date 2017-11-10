@@ -4,13 +4,14 @@
  */
 
 $self = basename( __FILE__, '.php' );
-
-$iterator = new DirectoryIterator( __DIR__ . '/bacon/ );
-while( $iterator->valid() ) {
-	$file = $iterator->current();
-	if ( ! $iterator->isDot() && $iterator->key() != 16 ) {
-		//echo $iterator->key() . " => " . $file->getFilename() . "\n";
-		require( $file->getFilename() );
-	}
-	$iterator->next();
+$source_path = __DIR__ . '/bacon/';
+$iterator = new DirectoryIterator( $source_path );
+while( $iterator->valid() && $iterator->key() != 18 ) {
+    $file = $iterator->current();
+    if ( ! $iterator->isDot() && $iterator->key() != 2 && $iterator->key() != 3 ) {
+        //echo $iterator->key() . " => " . $file->getFilename() . "\n";
+    require( $source_path .  $file->getFilename() );
+    }
+    $iterator->next();
 }
+
