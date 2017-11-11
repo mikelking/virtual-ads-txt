@@ -183,13 +183,36 @@ class Virtual_Ads_Txt_Controller extends Base_Plugin {
 	}
 
 	/**
+	 * Fastest array filter solution
+	 * Ensures all data elements in the array ahve been
+	 * sanitized or validated as appropriate to the filter map.
+	 * @param $options
+	 * @return array
+	 *
+	 */
+	public function filter_options( $options ) {
+		$filter_map = array(
+			self::OPT_NAME => FILTER_SANITIZE_STRING,
+			'remove_settings' => FILTER_VALIDATE_BOOLEAN,
+		);
+
+		$this->options = filter_var_array( $options, $filter_map );
+		return( $filtered_options );
+	}
+
+
+	/**
+	 * Simply dig up the options and return that array
 	 * @return array
 	 */
 	public function get_options() {
-		$this->options = get_option( self::OPT_NAME );
-		if ( ! is_array( $this->options ) ) {
+		$options = get_option( self::OPT_NAME );
+		if ( ! is_array( $options ) ) {
 			$this->set_default_options();
+			return( $this->options );
 		}
+
+		$this->filter_options( $options );
 		return( $this->options );
 	}
 
