@@ -151,7 +151,7 @@ class Virtual_Ads_Txt_Controller extends Base_Plugin {
 			//header( 'Content-Disposition: attachment; filename="ads.txt"', true );
 			header( 'Content-Type:' . self::CONTENT_TYPE, true );
 			header( 'Source: Virtual Ads.txt by Mikel King', true );
-			//header( self::HTTP_STATUS, true, self::HTTP_CODE );
+			header( self::HTTP_STATUS, true, self::HTTP_CODE );
 	}
 
 	public function is_ads_txt_request() {
