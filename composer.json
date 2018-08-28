@@ -1,46 +1,12 @@
 {
-  "name": "mikelking/dummy",
-  "type": "project",
-  "license": "BSD3",
-  "description": "A WordPress site for testing Composer based deployments",
-  "homepage": "http://www.olivent.net",
-  "authors": [
-    {
-      "name": "Olivent, llc.",
-      "email": "info@olivent.com",
-      "homepage": "https://github.com/mikelking/dummy"
-    },
-    {
-      "name": "Mikel King",
-      "email": "mikel.king@olivent.com",
-      "homepage": "https://github.com/mikelking"
+    "name": "mikelking/virtual-ads-txt",
+    "description": "Virtual Ads.txt",
+    "keywords": ["plugin", "framework"],
+    "type": "wordpress-plugin",
+    "homepage": "https://github.com/mikelking/virtual-ads-txt",
+    "license": "GPL-2",
+    "require": {
+        "php": ">=5.6",
+        "composer/installers": "v1.2.0"
     }
-  ],
-  "keywords": [
-    "wordpress", "stack", "composer", "vagrant", "wp"
-  ],
-  "config": {
-    "preferred-install": "source",
-    "generate-salts": true
-  },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/mikelking/bacon"
-    },
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org"
-    }
-  ],
-  "extra" : {
-    "installer-paths" : {
-      "inc/lib/bacon/" : ["type:wordpress-muplugin", "mikelking/bacon"]
-    }
-  },
-  "require": {
-    "php": ">=5.5",
-    "composer/installers" : "v1.2.0",
-    "mikelking/bacon" : "~1.0.0"
-  }
 }
